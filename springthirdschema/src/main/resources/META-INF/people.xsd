@@ -32,4 +32,13 @@ The unique identifier for a bean. A bean id may not be used more than once withi
 			</xsd:complexContent>
 		</xsd:complexType>
 	</xsd:element>
+	<xsd:element name="xwdref">
+		<xsd:complexType>
+			<xsd:complexContent>
+				<xsd:extension base="identifiedType">
+					<xsd:attribute name="localInterface" type="xsd:string"/>
+				</xsd:extension>
+			</xsd:complexContent>
+		</xsd:complexType>
+	</xsd:element>
 </xsd:schema>
